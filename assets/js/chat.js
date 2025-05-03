@@ -2,12 +2,6 @@ function abrirChat() {
     const nomeSalvo = localStorage.getItem('nomeUsuario');
     document.getElementById('chatModal').style.display = 'flex';
 
-    adicionarMensagem(
-      `Aqui é o lugar certo pra quem <strong>respira Counter-Strike</strong> e torce com o coração pela <strong>FURIA Esports!</strong><br>
-      Fique por dentro de tudo: escalações, jogos, bastidores, jogadas insanas e aquela resenha que só fã de verdade entende!<br><br>
-      <strong>Escolha uma das opções abaixo e bora começar o papo!</strong>`
-    );
-
     if (!nomeSalvo) {
         const nome = prompt('Qual seu nome?');
         if (nome) {
@@ -18,23 +12,23 @@ function abrirChat() {
         adicionarMensagem(`Bem-vindo de volta, ${nomeSalvo}!`);
     }
 
+    adicionarMensagem(
+        `Aqui é o lugar certo pra quem <strong>respira Counter-Strike</strong> e torce com o coração pela <strong>FURIA Esports!</strong><br>
+        Fique por dentro de tudo: escalações, jogos, bastidores, jogadas insanas e aquela resenha que só fã de verdade entende!<br><br>`
+    );
+
     mostrarSugestoes();
 }
 
 function mostrarSugestoes() {
     adicionarMensagem(`
-        Aqui é o lugar certo para quem respira Counter-Strike e torce com o coração pela FURIA Esports!
-        Fique por dentro de tudo: escalações, jogos, bastidores, jogadas insanas e aquela resenha que só fã de verdade entende!
         <br><br> Escolha uma das opções abaixo e digite no chat para continuar:
         <br>1. Próximas Partidas
-        <br>2. Campeonatos
-        <br>3. Notícias
-        <br>4. Loja Oficial
-        <br>5. Jogos Ao Vivo
-        <br>6. História do Time
-        <br>7. Jogadores
-        <br>8. Stats e Ranking
-        <br>9. Resultados Passados
+        <br>2. Jogos Ao Vivo
+        <br>3. Jogadores
+        <br>4. Notícias
+        <br>5. História do Time
+        <br>6. Loja Oficial
     `);
 }
 
