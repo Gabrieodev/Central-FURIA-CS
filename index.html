@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+  <body>
+    <header class="header" id="inicio">
+
+    <div class="header-nav">
+        <div class="logo">
+          <img class="logo" src="assets/images/logo.png" alt="FURIA Logo">
+          </div>
+            <ul class="navbar-menu">
+              <li class="navbar-item">
+                <a class="navbar-button" href="#inicio">
+                  <span class="navbar-label">Início</span>
+                </a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-button" href="#comunidade">
+                  <span class="navbar-label">Comunidade</span>
+                </a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-button" href="#noticias">
+                  <span class="navbar-label">Notícias</span>
+                </a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-button" href="#loja">
+                  <span class="navbar-label">Loja</span>
+                </a>
+              </li>
+            </ul>
+      </div>
+    </header>
+    <div class="div-hero-content">
+      <div class="overlap-group">
+        <img class="hero-gradient" src="assets/images/Gradiente.png" alt="">
+          <div class="text-wrapper">Salve, guerreiro da FURIA!</div>
+        <p class="p">
+          Aqui é o seu QG oficial pra tudo que rola no nosso time de CS.
+          Preparado pra torcer de verdade?
+        </p>
+      </div>
+    </div>
+    <section class="sponsors-section">
+      <div class="sponsors-text">
+        <p>A FURIA não cresce sozinha — cresce com gigantes ao lado</p>
+      </div>
+      <div class="sponsors-logos">
+        <div class="sponsor-logo">
+          <img src="assets/images/sponsor1.png" alt="Sponsor 1" />
+        </div>
+        <div class="sponsor-logo">
+          <img src="assets/images/sponsor2.png" alt="Sponsor 2" />
+        </div>
+        <div class="sponsor-logo">
+          <img src="assets/images/sponsor3.png" alt="Sponsor 3" />
+        </div>
+        <div class="sponsor-logo">
+          <img src="assets/images/sponsor4.png" alt="Sponsor 4" />
+        </div>
+        <div class="sponsor-logo">
+          <img src="assets/images/sponsor5.png" alt="Sponsor 5" />
+        </div>
+        <div class="sponsor-logo">
+          <img src="assets/images/sponsor6.png" alt="Sponsor 6" />
+        </div>
+      </div>
+    </section>
+    
+    <section class="community-section" id="comunidade">
+      <img class="community-image" src="assets/images/wall.jpg" alt="Community Image" />
+      <img class="community-gradient" src="assets/images/Gradiente.png" alt="Gradient" />
+      <img class="bottom-gradient" src="assets/images/Gradiente.png" alt="Gradient" />
+    
+      <div class="community-content">
+        <div class="community-heading">
+          <h2>A FURIA tá on</h2>
+          <h2>Veja os Números!</h2>
+        </div>
+    
+        <div class="community-stats vertical">
+          <div class="stat">
+            <p class="stat-value">+300</p>
+            <p class="stat-label">vitórias em partidas disputadas</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">129</p>
+            <p class="stat-label">total de torneios</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">1.4M</p>
+            <p class="stat-label">telespectadores de pico de todos os tempos</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">+6.9M</p>
+            <p class="stat-label">horas assistidas em 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="frame" id="noticias">
+      <img class="main-image" src="assets/images/wall.jpg" alt="Background Image" />
+      <img class="main-gradient" src="assets/images/Gradiente.png" alt="Gradient" />
+      <img class="mainbottom-gradient" src="assets/images/Gradiente.png" alt="Gradient" />
+      <article class="news-article">
+        <h2 class="headline">Novidades</h2>
+    
+        <div class="categories">
+          <button class="category" onclick="redirectTo('https://www.youtube.com/channel/UCE4elIT7DqDv545IA71feHg')">
+            <span class="bi bi-youtube"></span>
+          </button>
+          <button class="category" onclick="redirectTo('https://www.instagram.com/furiagg/')">
+            <span class="bi bi-instagram"></span>
+          </button>
+          <button class="category" onclick="redirectTo('https://x.com/FURIA')">
+            <span class="bi bi-twitter"></span>
+          </button>
+          <button class="category" onclick="redirectTo('https://www.tiktok.com/@furiagg')">
+            <span class="bi bi-tiktok"></span>
+          </button>
+          <button class="category" onclick="redirectTo('https://www.twitch.tv/furiatv/schedule')">
+            <span class="bi bi-twitch"></span>
+          </button>
+        </div>
+        
+        </div>
+    
+        <section class="about" aria-label="Notícia sobre a FURIA">
+          <div class="text-content">
+            <p class="platform-name">FURIA confirma adição de YEKINDAR</p>
+            <p class="description">
+              O jogador de 25 anos, por óbvio, assumirá a vaga anteriormente pertencente a Felipe "skullz" Medeiros, movido ao banco de reservas da FURIA também na tarde desta terça-feira (22), dando continuidade à internacionalização da equipe majoritariamente brasileira.
+            </p>
+            <button class="subheadline" onclick="redirectTo('https://draft5.gg/noticia/furia-confirma-adicao-de-yekindar')">
+              Saiba mais
+            </button>
+          </div>
+        
+          <figure class="image-container">
+            <img class="image" src="assets/images/background-news.png" alt="" />
+            <div class="highlight-wrapper">
+              <img class="highlight-image" src="assets/images/new-img.png" alt="" />
+            </div>
+          </figure>
+        </section>
+        
+      </article>
+    
+      <section class="media-gallery" aria-label=""  id="loja">
+        <img class="gallery-image" src="assets/images/img1.png" alt="Imagem da galeria 1" />
+        <img class="gallery-image" src="assets/images/img2.png" alt="Imagem da galeria 2" />
+        <img class="gallery-image" src="assets/images/img3.png" alt="Imagem da galeria 3" />
+      </section>
+
+        <h2 class="carousel-title">Do Brasil para o mundo.</h2>
+        <div class="image-carousel">
+        
+          <div class="carousel-track" id="carousel">
+            <img src="assets/images/carrossel1.png" alt="Imagem 1" />
+            <img src="assets/images/carrossel2.jpg" alt="Imagem 2" />
+            <img src="assets/images/carrossel9.jpg" alt="Imagem 9" />
+            <img src="assets/images/carrossel10.jpg" alt="Imagem 10" />
+            <img src="assets/images/carrossel5.jpg" alt="Imagem 5" />
+            <img src="assets/images/carrossel6.jpg" alt="Imagem 6" />
+            <img src="assets/images/carrossel8.jpg" alt="Imagem 8" />
+            <img src="assets/images/carrossel7.jpg" alt="Imagem 7" />
+            <img src="assets/images/carrossel3.jpg" alt="Imagem 3" />
+            <img src="assets/images/carrossel4.jpg" alt="Imagem 4" />
+          </div>
+          <button class="nav-button left" onclick="scrollCarouselLeft()">&#10094;</button>
+          <button class="nav-button right" onclick="scrollCarouselRight()">&#10095;</button>
+        </div>
+          
+        </div>
+
+        <div class="loja-section">
+          <p class="carousel-subtext">Vista o espírito competitivo. Sinta a FURIA em cada detalhe.</p>
+          <a href="https://www.furia.gg/" target="_blank" class="shop-button">Sinta-se como um campeão</a>
+        </div>
+
+        <!-- Chat com o Furioso -->
+        <div id="personagemChat" onclick="abrirChat()">
+          <img class="img-default" src="assets/images/character.png" alt="Personagem">
+        </div>
+
+        <div id="chatModal" class="chat-modal">
+          <div class="chat-container">
+            <button class="close" onclick="fecharChat()">X</button>
+            <div class="chat-box">
+              <div id="chatMessages">
+              </div>
+              <input type="text" id="userMessage" placeholder="Digite sua mensagem..." />
+              <button onclick="enviarMensagem()">Enviar</button>
+            </div>
+          </div>
+        </div>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">© 2025 FURIA. Todos os direitos reservados.</p>
+        
+        <div class="footer-links">
+          <a href="https://www.instagram.com/furiagg/" target="_blank" class="footer-link">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://x.com/FURIA" target="_blank" class="footer-link">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="footer-link">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCE4elIT7DqDv545IA71feHg" target="_blank" class="footer-link">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/chat.js"></script>
+
+</html>
