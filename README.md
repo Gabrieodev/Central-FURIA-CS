@@ -21,26 +21,22 @@
 
 ## 📁 Estrutura de Pastas
 
+```
 central-furia-cs/
-│
 ├── assets/
-│ ├── css/
-│ │ ├── global.css # Estilos globais reutilizáveis (resets, fontes, layout base)
-│ │ ├── style.css # Estilos específicos da landing page (cores, seções, botões)
-│ │ └── chat.css # Estilos dedicados ao componente de chat
-│ │
-│ ├── images/ # Imagens utilizadas na página (logos, banners, ícones)
-│ │ └── ...
-│ │
-│ └── js/
-│ ├── main.js # Scripts gerais da página (interações principais)
-│ └── chat.js # Lógica do chatbot (respostas, integração com API)
-│
-├── node_modules/ # Pacotes e dependências instalados via npm
-│
-├── index.html # Arquivo principal HTML da landing page
-│
-└── server.js # Servidor Node.js com Express que gerencia requisições e integrações externas
+│   ├── css/
+│   │   ├── global.css       # Estilos globais reutilizáveis (resets, fontes, layout base)
+│   │   ├── style.css        # Estilos específicos da landing page (cores, seções, botões)
+│   │   └── chat.css         # Estilos dedicados ao componente de chat
+│   ├── images/              # Imagens utilizadas na página (logos, banners, ícones)
+│   └── js/
+│       ├── main.js          # Scripts gerais da página (interações principais)
+│       └── chat.js          # Lógica do chatbot (respostas, integração com API)
+├── node_modules/            # Pacotes e dependências instalados via npm
+├── index.html               # Arquivo principal HTML da landing page
+└── server.js                # Servidor Node.js com Express que gerencia requisições e integrações externas
+```
+
 
 ## 🧠 Chatbot FURIOSO
 
