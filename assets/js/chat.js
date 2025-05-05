@@ -11,7 +11,7 @@ function abrirChat() {
     }
 }
 
-// localStorage.removeItem('nomeUsuario');
+localStorage.removeItem('nomeUsuario');
 
 function salvarNome() {
     const nome = document.getElementById('nomeUsuarioInput').value.trim();
