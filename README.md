@@ -75,7 +75,7 @@ A seguir, você verá a imagem da **landing page** da Central FURIA CS, com o **
 
 ## 🌐 Link da Página
 
-🔗 [Acesse a Landing Page da Central FURIA CS](https://seu-usuario.github.io/central-furia-cs)
+🔗 [Acesse a Landing Page da Central FURIA CS](https://gabrieodev.github.io/Central-FURIA-CS/)
 
 ---
 
