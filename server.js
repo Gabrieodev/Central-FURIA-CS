@@ -18,22 +18,38 @@ app.get('/', (req, res) => {
 //Notícias
 
 app.get('/api/news', async (req, res) => {
-  const url = 'https://hltv-api.vercel.app/api/news.json';  
+  const url = 'https://hltv-api.vercel.app/api/news.json';
 
   try {
     const response = await fetch(url);
     const news = await response.json();
-    
-    const furiaNews = news.filter(newsItem => 
-      newsItem.title.includes('FURIA')
-    );
 
-    res.json(furiaNews);  
+    const furiaNews = news
+      .filter(newsItem => newsItem.title.includes('FURIA'))
+      .map(item => {
+        
+        let title_pt = '';
+        let description_pt = '';
+
+        if (item.title === 'IEM Rio Major profile: FURIA') {
+          title_pt = 'Perfil da FURIA no IEM Rio Major';
+          description_pt = 'Os favoritos da casa para uma corrida nos playoffs vão ao Rio com muito a provar.';
+        }
+
+        return {
+          ...item,
+          title_pt,
+          description_pt
+        };
+      });
+
+    res.json(furiaNews);
   } catch (error) {
-    console.error('Erro na requisição de notícias:', error);
+    console.error('Erro ao buscar notícias:', error);
     res.status(500).json({ error: 'Erro ao obter as notícias.' });
   }
 });
+
 
 //Partidas
 

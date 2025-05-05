@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/global.css" />
@@ -50,7 +50,7 @@
           <div class="text-wrapper">Salve, guerreiro da FURIA!</div>
         <p class="p">
           Aqui é o seu QG oficial pra tudo que rola no nosso time de CS.
-          Nem todo mundo aguenta torcer de verdade. Você ta preparado?   
+          Nem todo mundo encara torcer de verdade. Você ta preparado?   
           O Furioso ta na área para respoder tudo!
         </p>
       </div>
@@ -199,6 +199,11 @@
         </div>
 
         <div id="chatModal" class="chat-modal">
+          <div id="nomeUsuarioBox" style="display: none;" class="nome-usuario-box">
+            <label for="nomeUsuarioInput">Qual seu nome?</label>
+            <input type="text" id="nomeUsuarioInput" placeholder="Digite seu nome..." />
+            <button onclick="salvarNome()">Bora!</button>
+          </div>
           <div class="chat-container">
             <button class="close" onclick="fecharChat()">X</button>
             <div class="chat-box">
@@ -223,7 +228,7 @@
           <a href="https://x.com/FURIA" target="_blank" class="footer-link">
             <i class="bi bi-twitter"></i>
           </a>
-          <a href="https://www.facebook.com" target="_blank" class="footer-link">
+          <a href="https://www.facebook.com/share/1AQ21Q7Nj6/?mibextid=wwXIfr" target="_blank" class="footer-link">
             <i class="bi bi-facebook"></i>
           </a>
           <a href="https://www.youtube.com/channel/UCE4elIT7DqDv545IA71feHg" target="_blank" class="footer-link">
