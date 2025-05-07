@@ -16,6 +16,7 @@
 | **Front-end** | HTML5, CSS3, JavaScript |
 | **Back-end**  | Node.js, Express.js     |
 | **API**       | HLTV API (não oficial)  |
+| **Deploy**    | Railway                 |
 
 ---
 
@@ -34,9 +35,9 @@ central-furia-cs/
 │       └── chat.js          # Lógica do chatbot (respostas, integração com API)
 ├── node_modules/            # Pacotes e dependências instalados via npm
 ├── index.html               # Arquivo principal HTML da landing page
+├── package.json             # Configuração do projeto Node.js (scripts, dependências, rota de start para Railway)
 └── server.js                # Servidor Node.js com Express que gerencia requisições e integrações externas
 ```
-
 
 ## 🧠 Chatbot FURIOSO
 
@@ -65,17 +66,20 @@ A seguir, confira as respostas que o FURIOSO exibe para cada uma das opções do
 
 A seguir, você verá a imagem da **landing page** da Central FURIA CS, com o **chatbot FURIOSO** em funcionamento. O chatbot foi projetado para proporcionar uma interação dinâmica e inteligente com os usuários, oferecendo respostas em tempo real, enquanto consome dados da **HLTV API**, uma fonte confiável e mundialmente reconhecida para estatísticas de **CS:GO** e **CS2**.
 
-![Imagem da Landing Page e Chatbot em Funcionamento](./assets/images/Print-page.png)
-![Imagem da Landing Page e Chatbot em Funcionamento](./assets/images/Print1.PNG)
-![Imagem da Landing Page e Chatbot em Funcionamento](./assets/images/Print2.PNG)
-![Imagem da Landing Page e Chatbot em Funcionamento](./assets/images/Print3.PNG)
-![Imagem da Landing Page e Chatbot em Funcionamento](./assets/images/Print4.PNG)
+<p align="center">
+  <img src="./assets/images/Print-page.png" width="600"/>
+  <img src="./assets/images/Print1.PNG" width="600"/>
+  <img src="./assets/images/Print2.PNG" width="600"/>
+  <img src="./assets/images/Print3.PNG" width="600"/>
+  <img src="./assets/images/Print4.PNG" width="600"/>
+</p>
+
 
 ---
 
 ## 🌐 Link da Página
 
-🔗 [Acesse a Landing Page da Central FURIA CS](https://gabrieodev.github.io/Central-FURIA-CS/)
+🔗 [Acesse a Landing Page da Central FURIA CS](https://central-furia-cs-production.up.railway.app/)
 
 ---
 

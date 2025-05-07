@@ -11,8 +11,6 @@ function abrirChat() {
     }
 }
 
-localStorage.removeItem('nomeUsuario');
-
 function salvarNome() {
     const nome = document.getElementById('nomeUsuarioInput').value.trim();
 
@@ -226,7 +224,7 @@ let mensagemEncerramentoExibida = false;
 function fecharChat() {
 
     if (!mensagemEncerramentoExibida) {
-        adicionarMensagem("👋 Até a próxima, Furioso!");
+        adicionarMensagem("👋 Até a próxima, Guerreiro!");
         mensagemEncerramentoExibida = true;  
     }
 
