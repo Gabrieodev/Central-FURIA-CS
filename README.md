@@ -68,7 +68,6 @@ A seguir, você verá a imagem da **landing page** da Central FURIA CS, com o **
 
 <p align="center">
   <img src="./assets/images/Print-page.png" width="600"/>
-  <img src="./assets/images/Print3.PNG" width="600"/>
 </p>
 
 
