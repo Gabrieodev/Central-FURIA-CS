@@ -605,13 +605,13 @@ figure.image-container {
 }
 
 .footer-links {
+  color: #ffffff;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
 .footer-link {
-  color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
   transition: color 0.3s ease;
