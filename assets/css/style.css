@@ -563,6 +563,7 @@ figure.image-container {
 .shop-button:hover {
   transform: scale(1.1);
   background-color: #df4701;
+  color: #000;
   transition: all 0.3s ease;
 }
 
