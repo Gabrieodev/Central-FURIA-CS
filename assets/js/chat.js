@@ -48,12 +48,17 @@ function mostrarSugestoes() {
 }
 
 function adicionarMensagem(texto) {
-    const chatMessages = document.getElementById('chatMessages');
-    const p = document.createElement('p');
-    p.innerHTML = `<strong>${texto.startsWith('Você') ? '' : 'Furioso:'}${texto}`;
-    chatMessages.appendChild(p);
-    chatMessages.scrollTop = chatMessages.scrollHeight;
+  const chatMessages = document.getElementById('chatMessages');
+  const p = document.createElement('p');
 
+  const prefixo = texto.startsWith('Você') ? '' : 'Furioso: ';
+
+  p.innerHTML = `<strong>${prefixo}</strong>${texto}`;
+
+  chatMessages.appendChild(p);
+
+  const chatBox = document.querySelector('.chat-box');
+  chatBox.scrollTop = chatBox.scrollHeight;
 }
 
 function responderOpcao(texto) {
@@ -211,12 +216,14 @@ function responderOpcao(texto) {
 }
 
 function enviarMensagem() {
-    const input = document.getElementById('userMessage').value;
-    if (input) {
-        adicionarMensagem(`Você: ${input}`);
-        responderOpcao(input);
-        document.getElementById('userMessage').value = '';
-    }
+  const inputElem = document.getElementById('userMessage');
+  const input = inputElem.value;
+  
+  if (input) {
+    adicionarMensagem(`Você: ${input}`);
+    responderOpcao(input);
+    inputElem.value = '';
+  }
 }
 
 let mensagemEncerramentoExibida = false;
