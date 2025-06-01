@@ -1,9 +1,8 @@
 function abrirChat() {
-    const nomeSalvo = localStorage.getItem('nomeUsuario');
+    const nomeSalvo = sessionStorage.getItem('nomeUsuario');
     document.getElementById('chatModal').style.display = 'flex';
 
     if (!nomeSalvo) {
-
         document.getElementById('nomeUsuarioBox').style.display = 'block';
         document.querySelector('.chat-container').style.display = 'none';
     } else {
@@ -15,7 +14,7 @@ function salvarNome() {
     const nome = document.getElementById('nomeUsuarioInput').value.trim();
 
     if (nome) {
-        localStorage.setItem('nomeUsuario', nome);
+        sessionStorage.setItem('nomeUsuario', nome);
         document.getElementById('nomeUsuarioBox').style.display = 'none';
         document.querySelector('.chat-container').style.display = 'block';
         iniciarChat(nome);
@@ -23,6 +22,7 @@ function salvarNome() {
         alert('Por favor, digite seu nome.');
     }
 }
+
 
 function iniciarChat(nome) {
     adicionarMensagem(`Prazer, ${nome}! Vamos nessa!`);
