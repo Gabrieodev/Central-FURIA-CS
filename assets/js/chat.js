@@ -24,10 +24,6 @@ function salvarNome() {
     }
 }
 
-window.addEventListener('beforeunload', function () {
-    localStorage.removeItem('nomeUsuario');
-});
-
 function iniciarChat(nome) {
     adicionarMensagem(`Prazer, ${nome}! Vamos nessa!`);
 
